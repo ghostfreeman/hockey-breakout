@@ -30,6 +30,6 @@ func _process(delta):
 	#find the screen boundaries and keep the paddle from escaping the edge
 	var bounds = get_viewport_rect().size
 	if global_position.x > bounds.x-50:
-		set_global_pos(Vector2(bounds.x-50,get_global_pos().y)) #TODO
+		set_global_pos(Vector2(bounds.x-50, global_position.y)) #TODO
 	elif global_position.x < 50:
-		set_global_pos(Vector2(50,get_global_pos().y)) #TODO
+		set_global_pos(Vector2(50, global_position.y)) #TODO

@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://ball.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Stick.gd" type="Script" id=2]
 [ext_resource path="res://paddle.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Brick.gd" type="Script" id=4]
+[ext_resource path="res://brick.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -40,14 +42,14 @@ extents = Vector2( 50.147, 6.76239 )
 
 [node name="Puck" type="RigidBody2D" parent="Node2D" index="0"]
 
-position = Vector2( 286.487, 121.596 )
+position = Vector2( 286.487, 373.322 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
 mass = 0.01
 friction = 0.0
-bounce = 0.0
+bounce = 1.0
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -130,7 +132,6 @@ shape = SubResource( 4 )
 
 [node name="TopWall" type="StaticBody2D" parent="Node2D" index="4"]
 
-editor/display_folded = true
 position = Vector2( 112.597, 185.256 )
 input_pickable = false
 collision_layer = 1
@@ -149,6 +150,7 @@ shape = SubResource( 5 )
 
 [node name="Stick" type="KinematicBody2D" parent="Node2D" index="5"]
 
+editor/display_folded = true
 position = Vector2( 273, 416 )
 input_pickable = false
 collision_layer = 1
@@ -180,5 +182,100 @@ bounce = 1.0
 position = Vector2( -0.0447998, 1.6134 )
 scale = Vector2( 0.631661, 4.76492 )
 shape = SubResource( 6 )
+
+[node name="Brick" type="StaticBody2D" parent="Node2D" index="6"]
+
+editor/display_folded = true
+position = Vector2( 274.336, 119.602 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 4 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick" index="0"]
+
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick" index="1"]
+
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick/Area2D" index="0"]
+
+position = Vector2( 0.320378, 1.3913 )
+scale = Vector2( 3.23318, 2.64348 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick" index="3"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="Brick2" type="StaticBody2D" parent="Node2D" index="7"]
+
+position = Vector2( 287.805, 320.904 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 4 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick2" index="0"]
+
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2" index="1"]
+
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick2" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2/Area2D" index="0"]
+
+position = Vector2( 0.320378, 1.3913 )
+scale = Vector2( 3.23318, 2.64348 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick2" index="3"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
 
 
