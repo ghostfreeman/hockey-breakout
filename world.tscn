@@ -150,7 +150,6 @@ shape = SubResource( 5 )
 
 [node name="Stick" type="KinematicBody2D" parent="Node2D" index="5"]
 
-editor/display_folded = true
 position = Vector2( 273, 416 )
 input_pickable = false
 collision_layer = 1
@@ -183,7 +182,7 @@ position = Vector2( -0.0447998, 1.6134 )
 scale = Vector2( 0.631661, 4.76492 )
 shape = SubResource( 6 )
 
-[node name="brick" type="StaticBody2D" parent="Node2D" index="6"]
+[node name="Brick" type="StaticBody2D" parent="Node2D" index="6"]
 
 position = Vector2( 350.211, 310.216 )
 input_pickable = false
@@ -196,17 +195,17 @@ bounce = 0.0
 script = ExtResource( 4 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/brick" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick" index="0"]
 
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/brick" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick" index="1"]
 
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 
-[node name="Area2D" type="Area2D" parent="Node2D/brick" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -218,16 +217,20 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/brick/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick/Area2D" index="0"]
 
 position = Vector2( 0.320378, 1.3913 )
 scale = Vector2( 3.23318, 2.64348 )
 
-[node name="Timer" type="Timer" parent="Node2D/brick" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick" index="3"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
+
+[connection signal="body_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_body_entered"]
+
+[connection signal="body_shape_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_body_shape_entered"]
 
 
