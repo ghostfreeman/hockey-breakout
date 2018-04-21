@@ -12,7 +12,7 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 10.9726
+radius = 11.6069
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -49,10 +49,10 @@ extents = Vector2( 10, 10.3781 )
 custom_solver_bias = 0.0
 extents = Vector2( 10.1049, 10.3152 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="CircleShape2D" id=9]
 
 custom_solver_bias = 0.0
-extents = Vector2( 41.7676, 10 )
+radius = 10.8356
 
 [node name="Node" type="Node" index="0"]
 
@@ -399,7 +399,112 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick8" type="StaticBody2D" parent="Node2D" index="8"]
+[node name="Brick22" type="StaticBody2D" parent="Node2D" index="8"]
+
+editor/display_folded = true
+position = Vector2( 298.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick22" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick22" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick22" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick22/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick22" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick38" type="StaticBody2D" parent="Node2D" index="9"]
+
+position = Vector2( 298.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick38" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick38" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick38" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick38/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick38" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick8" type="StaticBody2D" parent="Node2D" index="10"]
 
 editor/display_folded = true
 position = Vector2( 228.273, 244.412 )
@@ -452,7 +557,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick12" type="StaticBody2D" parent="Node2D" index="9"]
+[node name="Brick12" type="StaticBody2D" parent="Node2D" index="11"]
 
 editor/display_folded = true
 position = Vector2( 228.273, 217.412 )
@@ -505,7 +610,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick9" type="StaticBody2D" parent="Node2D" index="10"]
+[node name="Brick25" type="StaticBody2D" parent="Node2D" index="12"]
+
+editor/display_folded = true
+position = Vector2( 228.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick25" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick25" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick25" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick25/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick25" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick39" type="StaticBody2D" parent="Node2D" index="13"]
+
+editor/display_folded = true
+position = Vector2( 228.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick39" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick39" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick39" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick39/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick39" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick9" type="StaticBody2D" parent="Node2D" index="14"]
 
 editor/display_folded = true
 position = Vector2( 159.273, 244.412 )
@@ -558,7 +769,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick13" type="StaticBody2D" parent="Node2D" index="11"]
+[node name="Brick13" type="StaticBody2D" parent="Node2D" index="15"]
 
 editor/display_folded = true
 position = Vector2( 159.273, 217.412 )
@@ -611,7 +822,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick10" type="StaticBody2D" parent="Node2D" index="12"]
+[node name="Brick21" type="StaticBody2D" parent="Node2D" index="16"]
+
+editor/display_folded = true
+position = Vector2( 159.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick21" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick21" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick21" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick21/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick21" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick37" type="StaticBody2D" parent="Node2D" index="17"]
+
+editor/display_folded = true
+position = Vector2( 159.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick37" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick37" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick37" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick37/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick37" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick10" type="StaticBody2D" parent="Node2D" index="18"]
 
 editor/display_folded = true
 position = Vector2( 90.273, 244.412 )
@@ -664,7 +981,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick14" type="StaticBody2D" parent="Node2D" index="13"]
+[node name="Brick14" type="StaticBody2D" parent="Node2D" index="19"]
 
 editor/display_folded = true
 position = Vector2( 90.273, 217.412 )
@@ -717,7 +1034,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick2" type="StaticBody2D" parent="Node2D" index="14"]
+[node name="Brick26" type="StaticBody2D" parent="Node2D" index="20"]
+
+editor/display_folded = true
+position = Vector2( 90.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick26" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick26" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick26" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick26/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick26" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick34" type="StaticBody2D" parent="Node2D" index="21"]
+
+editor/display_folded = true
+position = Vector2( 90.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick34" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick34" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick34" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick2" type="StaticBody2D" parent="Node2D" index="22"]
 
 editor/display_folded = true
 position = Vector2( 367.273, 244.412 )
@@ -770,7 +1193,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick16" type="StaticBody2D" parent="Node2D" index="15"]
+[node name="Brick16" type="StaticBody2D" parent="Node2D" index="23"]
 
 editor/display_folded = true
 position = Vector2( 367.273, 217.412 )
@@ -823,7 +1246,112 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick3" type="StaticBody2D" parent="Node2D" index="16"]
+[node name="Brick24" type="StaticBody2D" parent="Node2D" index="24"]
+
+editor/display_folded = true
+position = Vector2( 367.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick24" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick24" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick24" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick24/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick24" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick33" type="StaticBody2D" parent="Node2D" index="25"]
+
+position = Vector2( 367.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick33" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick33" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick33" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick33/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick33" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick3" type="StaticBody2D" parent="Node2D" index="26"]
 
 editor/display_folded = true
 position = Vector2( 436.273, 244.412 )
@@ -876,7 +1404,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick17" type="StaticBody2D" parent="Node2D" index="17"]
+[node name="Brick17" type="StaticBody2D" parent="Node2D" index="27"]
 
 editor/display_folded = true
 position = Vector2( 436.273, 217.412 )
@@ -929,7 +1457,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick4" type="StaticBody2D" parent="Node2D" index="18"]
+[node name="Brick28" type="StaticBody2D" parent="Node2D" index="28"]
+
+editor/display_folded = true
+position = Vector2( 436.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick28" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick28" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick28" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick28/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick28" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick35" type="StaticBody2D" parent="Node2D" index="29"]
+
+editor/display_folded = true
+position = Vector2( 436.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick35" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick35" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick35" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick35/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick35" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick4" type="StaticBody2D" parent="Node2D" index="30"]
 
 editor/display_folded = true
 position = Vector2( 504.273, 244.412 )
@@ -982,7 +1616,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick15" type="StaticBody2D" parent="Node2D" index="19"]
+[node name="Brick15" type="StaticBody2D" parent="Node2D" index="31"]
 
 editor/display_folded = true
 position = Vector2( 504.273, 217.412 )
@@ -1035,7 +1669,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick5" type="StaticBody2D" parent="Node2D" index="20"]
+[node name="Brick27" type="StaticBody2D" parent="Node2D" index="32"]
+
+editor/display_folded = true
+position = Vector2( 504.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick27" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick27" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick27" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick27/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick27" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick31" type="StaticBody2D" parent="Node2D" index="33"]
+
+editor/display_folded = true
+position = Vector2( 504.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick31" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick31" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick31" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick31/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick31" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick5" type="StaticBody2D" parent="Node2D" index="34"]
 
 editor/display_folded = true
 position = Vector2( 572.273, 244.412 )
@@ -1088,7 +1828,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick18" type="StaticBody2D" parent="Node2D" index="21"]
+[node name="Brick18" type="StaticBody2D" parent="Node2D" index="35"]
 
 editor/display_folded = true
 position = Vector2( 572.273, 217.412 )
@@ -1141,7 +1881,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick6" type="StaticBody2D" parent="Node2D" index="22"]
+[node name="Brick29" type="StaticBody2D" parent="Node2D" index="36"]
+
+editor/display_folded = true
+position = Vector2( 572.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick29" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick29" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick29" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick29/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick29" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick36" type="StaticBody2D" parent="Node2D" index="37"]
+
+editor/display_folded = true
+position = Vector2( 572.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick36" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick36" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick36" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick36/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick36" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick6" type="StaticBody2D" parent="Node2D" index="38"]
 
 editor/display_folded = true
 position = Vector2( 640.273, 244.412 )
@@ -1194,7 +2040,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick19" type="StaticBody2D" parent="Node2D" index="23"]
+[node name="Brick19" type="StaticBody2D" parent="Node2D" index="39"]
 
 editor/display_folded = true
 position = Vector2( 640.273, 217.412 )
@@ -1247,7 +2093,113 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick7" type="StaticBody2D" parent="Node2D" index="24"]
+[node name="Brick23" type="StaticBody2D" parent="Node2D" index="40"]
+
+editor/display_folded = true
+position = Vector2( 640.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick23" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick23" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick23" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick23/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick23" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick32" type="StaticBody2D" parent="Node2D" index="41"]
+
+editor/display_folded = true
+position = Vector2( 640.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick32" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick32" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick32" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick32/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick32" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick7" type="StaticBody2D" parent="Node2D" index="42"]
 
 editor/display_folded = true
 position = Vector2( 708.273, 244.412 )
@@ -1300,7 +2252,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick20" type="StaticBody2D" parent="Node2D" index="25"]
+[node name="Brick20" type="StaticBody2D" parent="Node2D" index="43"]
 
 editor/display_folded = true
 position = Vector2( 708.273, 217.412 )
@@ -1353,9 +2305,114 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Net" type="StaticBody2D" parent="Node2D" index="26"]
+[node name="Brick30" type="StaticBody2D" parent="Node2D" index="44"]
 
 editor/display_folded = true
+position = Vector2( 708.273, 190.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick30" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick30" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick30" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick30/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick30" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick40" type="StaticBody2D" parent="Node2D" index="45"]
+
+editor/display_folded = true
+position = Vector2( 708.273, 164.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick40" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick40" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick40" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick40/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick40" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Net" type="StaticBody2D" parent="Node2D" index="46"]
+
 position = Vector2( 422.37, 74.6151 )
 input_pickable = false
 collision_layer = 1
@@ -1378,8 +2435,8 @@ audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Net/Area2D" index="0"]
 
-position = Vector2( -16.245, -36.4068 )
-scale = Vector2( 1, 1.10775 )
+position = Vector2( -15.821, -46.0693 )
+scale = Vector2( 4.64896, 4.02699 )
 shape = SubResource( 9 )
 
 [node name="Modal" type="Node2D" parent="." index="3"]
