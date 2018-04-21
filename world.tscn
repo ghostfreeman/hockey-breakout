@@ -47,7 +47,7 @@ extents = Vector2( 10, 10.3781 )
 [sub_resource type="RectangleShape2D" id=8]
 
 custom_solver_bias = 0.0
-extents = Vector2( 9.92422, 10 )
+extents = Vector2( 10.1049, 10.3152 )
 
 [sub_resource type="RectangleShape2D" id=9]
 
@@ -295,6 +295,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Brick" type="StaticBody2D" parent="Node2D" index="6"]
 
+editor/display_folded = true
 position = Vector2( 298.273, 244.412 )
 input_pickable = false
 collision_layer = 1
@@ -313,6 +314,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -344,62 +346,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick41" type="StaticBody2D" parent="Node2D" index="7"]
-
-position = Vector2( 298.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick41" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick41" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick41" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick41/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick41" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick11" type="StaticBody2D" parent="Node2D" index="8"]
+[node name="Brick11" type="StaticBody2D" parent="Node2D" index="7"]
 
 editor/display_folded = true
-position = Vector2( 298.273, 214.412 )
+position = Vector2( 298.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -417,6 +367,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick11" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -448,111 +399,7 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick21" type="StaticBody2D" parent="Node2D" index="9"]
-
-editor/display_folded = true
-position = Vector2( 298.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick21" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick21" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick21" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick21/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick21" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick33" type="StaticBody2D" parent="Node2D" index="10"]
-
-editor/display_folded = true
-position = Vector2( 298.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick33" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick33" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick33" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick33/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick33" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick8" type="StaticBody2D" parent="Node2D" index="11"]
+[node name="Brick8" type="StaticBody2D" parent="Node2D" index="8"]
 
 editor/display_folded = true
 position = Vector2( 228.273, 244.412 )
@@ -573,6 +420,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick8" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -604,62 +452,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick42" type="StaticBody2D" parent="Node2D" index="12"]
-
-position = Vector2( 228.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick42" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick42" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick42" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick42/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick42" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick12" type="StaticBody2D" parent="Node2D" index="13"]
+[node name="Brick12" type="StaticBody2D" parent="Node2D" index="9"]
 
 editor/display_folded = true
-position = Vector2( 228.273, 214.412 )
+position = Vector2( 228.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -677,6 +473,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick12" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -708,114 +505,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick22" type="StaticBody2D" parent="Node2D" index="14"]
+[node name="Brick9" type="StaticBody2D" parent="Node2D" index="10"]
 
 editor/display_folded = true
-position = Vector2( 228.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick22" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick22" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick22" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick22/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick22" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick34" type="StaticBody2D" parent="Node2D" index="15"]
-
-editor/display_folded = true
-position = Vector2( 228.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick34" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick34" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick34" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick9" type="StaticBody2D" parent="Node2D" index="16"]
-
-editor/display_folded = true
-position = Vector2( 157.273, 244.412 )
+position = Vector2( 159.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -833,6 +526,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick9" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -864,582 +558,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick45" type="StaticBody2D" parent="Node2D" index="17"]
-
-position = Vector2( 157.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick45" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick45" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick45" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick45/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick45" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick15" type="StaticBody2D" parent="Node2D" index="18"]
+[node name="Brick13" type="StaticBody2D" parent="Node2D" index="11"]
 
 editor/display_folded = true
-position = Vector2( 157.273, 214.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick15" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick15" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick15" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick15/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick15" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick24" type="StaticBody2D" parent="Node2D" index="19"]
-
-editor/display_folded = true
-position = Vector2( 157.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick24" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick24" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick24" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick24/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick24" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick40" type="StaticBody2D" parent="Node2D" index="20"]
-
-editor/display_folded = true
-position = Vector2( 157.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick40" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick40" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick40" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick40/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick40" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick10" type="StaticBody2D" parent="Node2D" index="21"]
-
-editor/display_folded = true
-position = Vector2( 86.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick10" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick10" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick10" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick10/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick10" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick49" type="StaticBody2D" parent="Node2D" index="22"]
-
-position = Vector2( 86.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick49" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick49" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick49" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick49/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick49" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick19" type="StaticBody2D" parent="Node2D" index="23"]
-
-editor/display_folded = true
-position = Vector2( 86.273, 214.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick19" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick19" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick19" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick19/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick19" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick29" type="StaticBody2D" parent="Node2D" index="24"]
-
-editor/display_folded = true
-position = Vector2( 86.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick29" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick29" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick29" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick29/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick29" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick38" type="StaticBody2D" parent="Node2D" index="25"]
-
-editor/display_folded = true
-position = Vector2( 86.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick38" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick38" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick38" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick38/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick38" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick2" type="StaticBody2D" parent="Node2D" index="26"]
-
-editor/display_folded = true
-position = Vector2( 368.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick2" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick2" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick2" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick43" type="StaticBody2D" parent="Node2D" index="27"]
-
-position = Vector2( 368.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick43" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick43" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick43" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick43/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick43" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick13" type="StaticBody2D" parent="Node2D" index="28"]
-
-editor/display_folded = true
-position = Vector2( 368.273, 214.412 )
+position = Vector2( 159.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1457,6 +579,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick13" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -1488,10 +611,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick28" type="StaticBody2D" parent="Node2D" index="29"]
+[node name="Brick10" type="StaticBody2D" parent="Node2D" index="12"]
 
 editor/display_folded = true
-position = Vector2( 368.273, 183.412 )
+position = Vector2( 90.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1502,167 +625,12 @@ bounce = 1.0
 script = ExtResource( 5 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/Brick28" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick10" index="0"]
 
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick28" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick28" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick28/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick28" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick36" type="StaticBody2D" parent="Node2D" index="30"]
-
-editor/display_folded = true
-position = Vector2( 368.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick36" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick36" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick36" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick36/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick36" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick3" type="StaticBody2D" parent="Node2D" index="31"]
-
-editor/display_folded = true
-position = Vector2( 438.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick3" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick3" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick3" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick3/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick3" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick44" type="StaticBody2D" parent="Node2D" index="32"]
-
-position = Vector2( 438.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick44" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick44" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick10" index="1"]
 
 visible = false
 position = Vector2( 0.0209951, -1.44387 )
@@ -1670,7 +638,7 @@ scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
-[node name="Area2D" type="Area2D" parent="Node2D/Brick44" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick10" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -1683,23 +651,23 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick44/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick10/Area2D" index="0"]
 
 position = Vector2( 0.0350037, 0.91687 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
-[node name="Timer" type="Timer" parent="Node2D/Brick44" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick10" index="3"]
 
 process_mode = 1
 wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick14" type="StaticBody2D" parent="Node2D" index="33"]
+[node name="Brick14" type="StaticBody2D" parent="Node2D" index="13"]
 
 editor/display_folded = true
-position = Vector2( 438.273, 214.412 )
+position = Vector2( 90.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1717,6 +685,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick14" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -1748,10 +717,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick23" type="StaticBody2D" parent="Node2D" index="34"]
+[node name="Brick2" type="StaticBody2D" parent="Node2D" index="14"]
 
 editor/display_folded = true
-position = Vector2( 438.273, 183.412 )
+position = Vector2( 367.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1762,167 +731,12 @@ bounce = 1.0
 script = ExtResource( 5 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/Brick23" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick2" index="0"]
 
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick23" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick23" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick23/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick23" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick35" type="StaticBody2D" parent="Node2D" index="35"]
-
-editor/display_folded = true
-position = Vector2( 438.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick35" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick35" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick35" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick35/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick35" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick4" type="StaticBody2D" parent="Node2D" index="36"]
-
-editor/display_folded = true
-position = Vector2( 508.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick4" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick4" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick4" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick4/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick4" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick48" type="StaticBody2D" parent="Node2D" index="37"]
-
-position = Vector2( 508.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick48" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick48" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2" index="1"]
 
 visible = false
 position = Vector2( 0.0209951, -1.44387 )
@@ -1930,7 +744,7 @@ scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
-[node name="Area2D" type="Area2D" parent="Node2D/Brick48" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick2" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -1943,283 +757,23 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick48/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick2/Area2D" index="0"]
 
 position = Vector2( 0.0350037, 0.91687 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
-[node name="Timer" type="Timer" parent="Node2D/Brick48" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick2" index="3"]
 
 process_mode = 1
 wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick18" type="StaticBody2D" parent="Node2D" index="38"]
+[node name="Brick16" type="StaticBody2D" parent="Node2D" index="15"]
 
 editor/display_folded = true
-position = Vector2( 508.273, 214.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick18" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick18" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick18" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick18/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick18" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick27" type="StaticBody2D" parent="Node2D" index="39"]
-
-editor/display_folded = true
-position = Vector2( 508.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick27" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick27" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick27" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick27/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick27" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick32" type="StaticBody2D" parent="Node2D" index="40"]
-
-editor/display_folded = true
-position = Vector2( 508.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick32" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick32" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick32" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick32/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick32" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick5" type="StaticBody2D" parent="Node2D" index="41"]
-
-editor/display_folded = true
-position = Vector2( 579.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick5" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick5" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick5" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick5/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick5" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick46" type="StaticBody2D" parent="Node2D" index="42"]
-
-position = Vector2( 579.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick46" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick46" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick46" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick46/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick46" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick16" type="StaticBody2D" parent="Node2D" index="43"]
-
-editor/display_folded = true
-position = Vector2( 579.273, 214.412 )
+position = Vector2( 367.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2237,6 +791,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick16" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -2268,10 +823,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick25" type="StaticBody2D" parent="Node2D" index="44"]
+[node name="Brick3" type="StaticBody2D" parent="Node2D" index="16"]
 
 editor/display_folded = true
-position = Vector2( 579.273, 183.412 )
+position = Vector2( 436.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2282,167 +837,12 @@ bounce = 1.0
 script = ExtResource( 5 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/Brick25" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick3" index="0"]
 
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick25" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick25" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick25/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick25" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick39" type="StaticBody2D" parent="Node2D" index="45"]
-
-editor/display_folded = true
-position = Vector2( 579.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick39" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick39" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick39" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick39/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick39" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick6" type="StaticBody2D" parent="Node2D" index="46"]
-
-editor/display_folded = true
-position = Vector2( 650.273, 244.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick6" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick6" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick6" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick6/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick6" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick47" type="StaticBody2D" parent="Node2D" index="47"]
-
-position = Vector2( 650.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick47" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick47" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick3" index="1"]
 
 visible = false
 position = Vector2( 0.0209951, -1.44387 )
@@ -2450,7 +850,7 @@ scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
-[node name="Area2D" type="Area2D" parent="Node2D/Brick47" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick3" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -2463,23 +863,23 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick47/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick3/Area2D" index="0"]
 
 position = Vector2( 0.0350037, 0.91687 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
-[node name="Timer" type="Timer" parent="Node2D/Brick47" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick3" index="3"]
 
 process_mode = 1
 wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick17" type="StaticBody2D" parent="Node2D" index="48"]
+[node name="Brick17" type="StaticBody2D" parent="Node2D" index="17"]
 
 editor/display_folded = true
-position = Vector2( 650.273, 214.412 )
+position = Vector2( 436.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2497,6 +897,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick17" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -2528,10 +929,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick26" type="StaticBody2D" parent="Node2D" index="49"]
+[node name="Brick4" type="StaticBody2D" parent="Node2D" index="18"]
 
 editor/display_folded = true
-position = Vector2( 650.273, 183.412 )
+position = Vector2( 504.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2542,19 +943,20 @@ bounce = 1.0
 script = ExtResource( 5 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/Brick26" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick4" index="0"]
 
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick26" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick4" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
-[node name="Area2D" type="Area2D" parent="Node2D/Brick26" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick4" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -2567,23 +969,23 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick26/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick4/Area2D" index="0"]
 
 position = Vector2( 0.0350037, 0.91687 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
-[node name="Timer" type="Timer" parent="Node2D/Brick26" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick4" index="3"]
 
 process_mode = 1
 wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick31" type="StaticBody2D" parent="Node2D" index="50"]
+[node name="Brick15" type="StaticBody2D" parent="Node2D" index="19"]
 
 editor/display_folded = true
-position = Vector2( 650.273, 153.412 )
+position = Vector2( 504.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2594,19 +996,20 @@ bounce = 1.0
 script = ExtResource( 5 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
 
-[node name="Sprite" type="Sprite" parent="Node2D/Brick31" index="0"]
+[node name="Sprite" type="Sprite" parent="Node2D/Brick15" index="0"]
 
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick31" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick15" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
-[node name="Area2D" type="Area2D" parent="Node2D/Brick31" index="2"]
+[node name="Area2D" type="Area2D" parent="Node2D/Brick15" index="2"]
 
 position = Vector2( 0, -1.51174 )
 scale = Vector2( 1, 0.430342 )
@@ -2619,23 +1022,235 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick31/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick15/Area2D" index="0"]
 
 position = Vector2( 0.0350037, 0.91687 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
-[node name="Timer" type="Timer" parent="Node2D/Brick31" index="3"]
+[node name="Timer" type="Timer" parent="Node2D/Brick15" index="3"]
 
 process_mode = 1
 wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick7" type="StaticBody2D" parent="Node2D" index="51"]
+[node name="Brick5" type="StaticBody2D" parent="Node2D" index="20"]
 
 editor/display_folded = true
-position = Vector2( 721.273, 244.412 )
+position = Vector2( 572.273, 244.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick5" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick5" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick5" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick5/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick5" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick18" type="StaticBody2D" parent="Node2D" index="21"]
+
+editor/display_folded = true
+position = Vector2( 572.273, 217.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick18" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick18" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick18" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick18/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick18" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick6" type="StaticBody2D" parent="Node2D" index="22"]
+
+editor/display_folded = true
+position = Vector2( 640.273, 244.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick6" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick6" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick6" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick6/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick6" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick19" type="StaticBody2D" parent="Node2D" index="23"]
+
+editor/display_folded = true
+position = Vector2( 640.273, 217.412 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 1.0
+script = ExtResource( 5 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="Node2D/Brick19" index="0"]
+
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick19" index="1"]
+
+visible = false
+position = Vector2( 0.0209951, -1.44387 )
+scale = Vector2( 3.26312, 1.14439 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Brick19" index="2"]
+
+position = Vector2( 0, -1.51174 )
+scale = Vector2( 1, 0.430342 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick19/Area2D" index="0"]
+
+position = Vector2( 0.0350037, 0.91687 )
+scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 8 )
+
+[node name="Timer" type="Timer" parent="Node2D/Brick19" index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="Brick7" type="StaticBody2D" parent="Node2D" index="24"]
+
+editor/display_folded = true
+position = Vector2( 708.273, 244.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2653,6 +1268,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick7" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -2684,62 +1300,10 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick50" type="StaticBody2D" parent="Node2D" index="52"]
-
-position = Vector2( 721.273, 123.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick50" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick50" index="1"]
-
-visible = false
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick50" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick50/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick50" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick20" type="StaticBody2D" parent="Node2D" index="53"]
+[node name="Brick20" type="StaticBody2D" parent="Node2D" index="25"]
 
 editor/display_folded = true
-position = Vector2( 721.273, 214.412 )
+position = Vector2( 708.273, 217.412 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2757,6 +1321,7 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick20" index="1"]
 
+visible = false
 position = Vector2( 0.0209951, -1.44387 )
 scale = Vector2( 3.26312, 1.14439 )
 shape = SubResource( 7 )
@@ -2788,112 +1353,9 @@ wait_time = 0.2
 one_shot = false
 autostart = false
 
-[node name="Brick30" type="StaticBody2D" parent="Node2D" index="54"]
+[node name="Net" type="StaticBody2D" parent="Node2D" index="26"]
 
 editor/display_folded = true
-position = Vector2( 721.273, 183.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick30" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick30" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick30" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick30/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick30" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Brick37" type="StaticBody2D" parent="Node2D" index="55"]
-
-editor/display_folded = true
-position = Vector2( 721.273, 153.412 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 0.0
-bounce = 1.0
-script = ExtResource( 5 )
-_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
-
-[node name="Sprite" type="Sprite" parent="Node2D/Brick37" index="0"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick37" index="1"]
-
-position = Vector2( 0.0209951, -1.44387 )
-scale = Vector2( 3.26312, 1.14439 )
-shape = SubResource( 7 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="Area2D" type="Area2D" parent="Node2D/Brick37" index="2"]
-
-position = Vector2( 0, -1.51174 )
-scale = Vector2( 1, 0.430342 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Index" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick37/Area2D" index="0"]
-
-position = Vector2( 0.0350037, 0.91687 )
-scale = Vector2( 3.23318, 2.64348 )
-shape = SubResource( 8 )
-
-[node name="Timer" type="Timer" parent="Node2D/Brick37" index="3"]
-
-process_mode = 1
-wait_time = 0.2
-one_shot = false
-autostart = false
-
-[node name="Net" type="StaticBody2D" parent="Node2D" index="56"]
-
 position = Vector2( 422.37, 74.6151 )
 input_pickable = false
 collision_layer = 1
@@ -2988,406 +1450,6 @@ group = null
 text = "Play Again"
 flat = false
 align = 1
-
-[connection signal="area_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick41/Area2D" to="Node2D/Brick41" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick41/Area2D" to="Node2D/Brick41" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick41/Area2D" to="Node2D/Brick41" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick41/Area2D" to="Node2D/Brick41" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick11/Area2D" to="Node2D/Brick11" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick11/Area2D" to="Node2D/Brick11" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick11/Area2D" to="Node2D/Brick11" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick11/Area2D" to="Node2D/Brick11" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick21/Area2D" to="Node2D/Brick21" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick21/Area2D" to="Node2D/Brick21" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick21/Area2D" to="Node2D/Brick21" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick21/Area2D" to="Node2D/Brick21" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick33/Area2D" to="Node2D/Brick33" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick33/Area2D" to="Node2D/Brick33" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick33/Area2D" to="Node2D/Brick33" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick33/Area2D" to="Node2D/Brick33" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick8/Area2D" to="Node2D/Brick8" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick8/Area2D" to="Node2D/Brick8" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick8/Area2D" to="Node2D/Brick8" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick8/Area2D" to="Node2D/Brick8" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick42/Area2D" to="Node2D/Brick42" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick42/Area2D" to="Node2D/Brick42" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick42/Area2D" to="Node2D/Brick42" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick42/Area2D" to="Node2D/Brick42" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick12/Area2D" to="Node2D/Brick12" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick12/Area2D" to="Node2D/Brick12" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick12/Area2D" to="Node2D/Brick12" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick12/Area2D" to="Node2D/Brick12" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick22/Area2D" to="Node2D/Brick22" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick22/Area2D" to="Node2D/Brick22" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick22/Area2D" to="Node2D/Brick22" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick22/Area2D" to="Node2D/Brick22" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick34/Area2D" to="Node2D/Brick34" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick34/Area2D" to="Node2D/Brick34" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick34/Area2D" to="Node2D/Brick34" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick34/Area2D" to="Node2D/Brick34" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick9/Area2D" to="Node2D/Brick9" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick9/Area2D" to="Node2D/Brick9" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick9/Area2D" to="Node2D/Brick9" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick9/Area2D" to="Node2D/Brick9" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick45/Area2D" to="Node2D/Brick45" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick45/Area2D" to="Node2D/Brick45" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick45/Area2D" to="Node2D/Brick45" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick45/Area2D" to="Node2D/Brick45" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick15/Area2D" to="Node2D/Brick15" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick15/Area2D" to="Node2D/Brick15" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick15/Area2D" to="Node2D/Brick15" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick15/Area2D" to="Node2D/Brick15" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick24/Area2D" to="Node2D/Brick24" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick24/Area2D" to="Node2D/Brick24" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick24/Area2D" to="Node2D/Brick24" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick24/Area2D" to="Node2D/Brick24" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick40/Area2D" to="Node2D/Brick40" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick40/Area2D" to="Node2D/Brick40" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick40/Area2D" to="Node2D/Brick40" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick40/Area2D" to="Node2D/Brick40" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick10/Area2D" to="Node2D/Brick10" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick10/Area2D" to="Node2D/Brick10" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick10/Area2D" to="Node2D/Brick10" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick10/Area2D" to="Node2D/Brick10" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick49/Area2D" to="Node2D/Brick49" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick49/Area2D" to="Node2D/Brick49" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick49/Area2D" to="Node2D/Brick49" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick49/Area2D" to="Node2D/Brick49" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick19/Area2D" to="Node2D/Brick19" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick19/Area2D" to="Node2D/Brick19" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick19/Area2D" to="Node2D/Brick19" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick19/Area2D" to="Node2D/Brick19" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick29/Area2D" to="Node2D/Brick29" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick29/Area2D" to="Node2D/Brick29" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick29/Area2D" to="Node2D/Brick29" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick29/Area2D" to="Node2D/Brick29" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick38/Area2D" to="Node2D/Brick38" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick38/Area2D" to="Node2D/Brick38" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick38/Area2D" to="Node2D/Brick38" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick38/Area2D" to="Node2D/Brick38" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick2/Area2D" to="Node2D/Brick2" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick2/Area2D" to="Node2D/Brick2" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick2/Area2D" to="Node2D/Brick2" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick2/Area2D" to="Node2D/Brick2" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick43/Area2D" to="Node2D/Brick43" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick43/Area2D" to="Node2D/Brick43" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick43/Area2D" to="Node2D/Brick43" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick43/Area2D" to="Node2D/Brick43" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick13/Area2D" to="Node2D/Brick13" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick13/Area2D" to="Node2D/Brick13" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick13/Area2D" to="Node2D/Brick13" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick13/Area2D" to="Node2D/Brick13" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick28/Area2D" to="Node2D/Brick28" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick28/Area2D" to="Node2D/Brick28" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick28/Area2D" to="Node2D/Brick28" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick28/Area2D" to="Node2D/Brick28" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick36/Area2D" to="Node2D/Brick36" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick36/Area2D" to="Node2D/Brick36" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick36/Area2D" to="Node2D/Brick36" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick36/Area2D" to="Node2D/Brick36" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick3/Area2D" to="Node2D/Brick3" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick3/Area2D" to="Node2D/Brick3" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick3/Area2D" to="Node2D/Brick3" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick3/Area2D" to="Node2D/Brick3" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick44/Area2D" to="Node2D/Brick44" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick44/Area2D" to="Node2D/Brick44" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick44/Area2D" to="Node2D/Brick44" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick44/Area2D" to="Node2D/Brick44" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick14/Area2D" to="Node2D/Brick14" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick14/Area2D" to="Node2D/Brick14" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick14/Area2D" to="Node2D/Brick14" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick14/Area2D" to="Node2D/Brick14" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick23/Area2D" to="Node2D/Brick23" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick23/Area2D" to="Node2D/Brick23" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick23/Area2D" to="Node2D/Brick23" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick23/Area2D" to="Node2D/Brick23" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick35/Area2D" to="Node2D/Brick35" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick35/Area2D" to="Node2D/Brick35" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick35/Area2D" to="Node2D/Brick35" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick35/Area2D" to="Node2D/Brick35" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick4/Area2D" to="Node2D/Brick4" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick4/Area2D" to="Node2D/Brick4" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick4/Area2D" to="Node2D/Brick4" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick4/Area2D" to="Node2D/Brick4" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick48/Area2D" to="Node2D/Brick48" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick48/Area2D" to="Node2D/Brick48" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick48/Area2D" to="Node2D/Brick48" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick48/Area2D" to="Node2D/Brick48" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick18/Area2D" to="Node2D/Brick18" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick18/Area2D" to="Node2D/Brick18" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick18/Area2D" to="Node2D/Brick18" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick18/Area2D" to="Node2D/Brick18" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick27/Area2D" to="Node2D/Brick27" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick27/Area2D" to="Node2D/Brick27" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick27/Area2D" to="Node2D/Brick27" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick27/Area2D" to="Node2D/Brick27" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick32/Area2D" to="Node2D/Brick32" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick32/Area2D" to="Node2D/Brick32" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick32/Area2D" to="Node2D/Brick32" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick32/Area2D" to="Node2D/Brick32" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick5/Area2D" to="Node2D/Brick5" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick5/Area2D" to="Node2D/Brick5" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick5/Area2D" to="Node2D/Brick5" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick5/Area2D" to="Node2D/Brick5" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick46/Area2D" to="Node2D/Brick46" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick46/Area2D" to="Node2D/Brick46" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick46/Area2D" to="Node2D/Brick46" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick46/Area2D" to="Node2D/Brick46" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick16/Area2D" to="Node2D/Brick16" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick16/Area2D" to="Node2D/Brick16" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick16/Area2D" to="Node2D/Brick16" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick16/Area2D" to="Node2D/Brick16" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick25/Area2D" to="Node2D/Brick25" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick25/Area2D" to="Node2D/Brick25" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick25/Area2D" to="Node2D/Brick25" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick25/Area2D" to="Node2D/Brick25" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick39/Area2D" to="Node2D/Brick39" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick39/Area2D" to="Node2D/Brick39" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick39/Area2D" to="Node2D/Brick39" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick39/Area2D" to="Node2D/Brick39" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick6/Area2D" to="Node2D/Brick6" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick6/Area2D" to="Node2D/Brick6" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick6/Area2D" to="Node2D/Brick6" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick6/Area2D" to="Node2D/Brick6" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick47/Area2D" to="Node2D/Brick47" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick47/Area2D" to="Node2D/Brick47" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick47/Area2D" to="Node2D/Brick47" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick47/Area2D" to="Node2D/Brick47" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick17/Area2D" to="Node2D/Brick17" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick17/Area2D" to="Node2D/Brick17" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick17/Area2D" to="Node2D/Brick17" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick17/Area2D" to="Node2D/Brick17" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick26/Area2D" to="Node2D/Brick26" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick26/Area2D" to="Node2D/Brick26" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick26/Area2D" to="Node2D/Brick26" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick26/Area2D" to="Node2D/Brick26" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick31/Area2D" to="Node2D/Brick31" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick31/Area2D" to="Node2D/Brick31" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick31/Area2D" to="Node2D/Brick31" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick31/Area2D" to="Node2D/Brick31" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick7/Area2D" to="Node2D/Brick7" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick7/Area2D" to="Node2D/Brick7" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick7/Area2D" to="Node2D/Brick7" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick7/Area2D" to="Node2D/Brick7" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick50/Area2D" to="Node2D/Brick50" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick50/Area2D" to="Node2D/Brick50" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick50/Area2D" to="Node2D/Brick50" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick50/Area2D" to="Node2D/Brick50" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick20/Area2D" to="Node2D/Brick20" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick20/Area2D" to="Node2D/Brick20" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick20/Area2D" to="Node2D/Brick20" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick20/Area2D" to="Node2D/Brick20" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick30/Area2D" to="Node2D/Brick30" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick30/Area2D" to="Node2D/Brick30" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick30/Area2D" to="Node2D/Brick30" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick30/Area2D" to="Node2D/Brick30" method="_on_Area2D_body_shape_entered"]
-
-[connection signal="area_entered" from="Node2D/Brick37/Area2D" to="Node2D/Brick37" method="_on_Area2D_area_entered"]
-
-[connection signal="area_shape_entered" from="Node2D/Brick37/Area2D" to="Node2D/Brick37" method="_on_Area2D_area_shape_entered"]
-
-[connection signal="body_entered" from="Node2D/Brick37/Area2D" to="Node2D/Brick37" method="_on_Area2D_body_entered"]
-
-[connection signal="body_shape_entered" from="Node2D/Brick37/Area2D" to="Node2D/Brick37" method="_on_Area2D_body_shape_entered"]
 
 [connection signal="body_entered" from="Node2D/Net/Area2D" to="Node2D/Net" method="_on_Area2D_body_entered"]
 
