@@ -13,6 +13,8 @@ func _ready():
 
 func _on_brick_body_enter(body):
 	#if the ball hit the brick, destroy it
+	var timestamp = OS.get_unix_time()
+	print("[" + str(timestamp) + "] Collided with Brick")
 	if body.get_name() == "Puck":
 		queue_free()
 		var Score = int(get_parent().get_parent().get_node("HUD/ScoreValue").text)
