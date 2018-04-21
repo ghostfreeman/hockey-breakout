@@ -756,7 +756,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick22" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -808,7 +808,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick34" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -860,7 +860,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick9" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -912,7 +912,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick45" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -964,7 +964,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick15" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1016,7 +1016,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick24" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1068,7 +1068,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick40" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1120,7 +1120,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick10" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1172,7 +1172,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick49" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1224,7 +1224,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick19" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1276,7 +1276,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick29" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1328,7 +1328,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick38" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1380,7 +1380,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick2" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1432,7 +1432,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick43" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1484,7 +1484,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick13" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1536,7 +1536,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick28" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1588,7 +1588,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick36" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1640,7 +1640,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick3" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1692,7 +1692,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick44" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1744,7 +1744,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick14" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1796,7 +1796,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick23" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1848,7 +1848,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick35" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1900,7 +1900,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick4" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -1952,7 +1952,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick48" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2004,7 +2004,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick18" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2056,7 +2056,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick27" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2108,7 +2108,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick32" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2160,7 +2160,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick5" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2212,7 +2212,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick46" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2264,7 +2264,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick16" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2316,7 +2316,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick25" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2368,7 +2368,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick39" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2420,7 +2420,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick6" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2472,7 +2472,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick47" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2524,7 +2524,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick17" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2576,7 +2576,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick26" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2628,7 +2628,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick31" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2680,7 +2680,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick7" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2732,7 +2732,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick50" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2784,7 +2784,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick20" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2836,7 +2836,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick30" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -2888,7 +2888,7 @@ shape = SubResource( 8 )
 [node name="Timer" type="Timer" parent="Node2D/Brick37" index="3"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.2
 one_shot = false
 autostart = false
 
@@ -3392,3 +3392,5 @@ align = 1
 [connection signal="body_entered" from="Node2D/Net/Area2D" to="Node2D/Net" method="_on_Area2D_body_entered"]
 
 [connection signal="button_down" from="Modal/Button" to="Modal" method="_on_Button_button_down"]
+
+
