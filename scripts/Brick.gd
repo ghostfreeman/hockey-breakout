@@ -17,3 +17,9 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_shape_entered(body_id, body, body_shape, area_shape):
 	print("Collision (body_shape_entered)")
+
+func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
+	print("Collision (shape_entered)")
+
+func _on_Area2D_area_entered(area):
+	print("Collision (area_entered)")

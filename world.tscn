@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ball.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Stick.gd" type="Script" id=2]
@@ -35,6 +35,11 @@ extents = Vector2( 11.584, 10 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 50.147, 6.76239 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.94311, 10 )
 
 [node name="Node" type="Node" index="0"]
 
@@ -221,6 +226,7 @@ audio_bus_name = "Master"
 
 position = Vector2( 0.320378, 1.3913 )
 scale = Vector2( 3.23318, 2.64348 )
+shape = SubResource( 7 )
 
 [node name="Timer" type="Timer" parent="Node2D/Brick" index="3"]
 
@@ -228,6 +234,10 @@ process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
+
+[connection signal="area_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_area_entered"]
+
+[connection signal="area_shape_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_area_shape_entered"]
 
 [connection signal="body_entered" from="Node2D/Brick/Area2D" to="Node2D/Brick" method="_on_Area2D_body_entered"]
 
