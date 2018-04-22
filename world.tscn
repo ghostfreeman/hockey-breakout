@@ -16,7 +16,7 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 12.4154
+radius = 12.0346
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -302,7 +302,6 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Area2D" type="Area2D" parent="Node2D/Stick/StaticBody2D" index="1"]
 
-scale = Vector2( 1, 1 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

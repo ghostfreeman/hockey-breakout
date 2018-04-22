@@ -9,4 +9,5 @@ func _on_Area2D_body_entered(body):
 		get_parent().get_node("Puck").speed = 0
 		get_parent().get_node("Puck").friction = 1
 		get_parent().get_node("Puck").hide()
+		get_parent().get_node("Puck").queue_free()
 		get_parent().get_parent().get_node("Modal").show()
