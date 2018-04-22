@@ -36,3 +36,20 @@ func _process(delta):
 		global_position = Vector2(bounds.x-50, global_position.y)
 	elif global_position.x < 50:
 		global_position = Vector2(50, global_position.y)
+
+func _on_Area2D_body_entered(body):
+	print("Paddle collision")
+	print("Node Name: " + body.get_name())
+	print("Type of object: " + str(typeof(body)))
+	if (body.get_name() == "Puck"):
+		var velocity = body.linear_velocity
+		print("Puck Velocity: " + str(velocity))
+		
+		var PuckPos = body.position
+		var StickPos = global_position
+		var RelativePos = PuckPos.x - StickPos.x
+		var Coefficient = (PuckPos.x - StickPos.x) / 100
+		var DirectionRay = Coefficient * PI / 2.4
+		velocity = velocity.rotated(DirectionRay)
+		body.linear_velocity = velocity
+		#body.adjust_angle()
