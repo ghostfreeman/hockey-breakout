@@ -1,13 +1,16 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://cropped_ice_rink.png" type="Texture" id=1]
 [ext_resource path="res://puck.png" type="Texture" id=2]
 [ext_resource path="res://scripts/Stick.gd" type="Script" id=3]
 [ext_resource path="res://paddle.png" type="Texture" id=4]
 [ext_resource path="res://scripts/Brick.gd" type="Script" id=5]
-[ext_resource path="res://brick.png" type="Texture" id=6]
-[ext_resource path="res://Net.gd" type="Script" id=7]
-[ext_resource path="res://Modal.gd" type="Script" id=8]
+[ext_resource path="res://brick_blue.png" type="Texture" id=6]
+[ext_resource path="res://brick_green.png" type="Texture" id=7]
+[ext_resource path="res://brick_yellow.png" type="Texture" id=8]
+[ext_resource path="res://brick_red.png" type="Texture" id=9]
+[ext_resource path="res://Net.gd" type="Script" id=10]
+[ext_resource path="res://Modal.gd" type="Script" id=11]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -42,12 +45,12 @@ extents = Vector2( 50.147, 6.76239 )
 [sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10.3781 )
+extents = Vector2( 10.4129, 11.498 )
 
 [sub_resource type="RectangleShape2D" id=8]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10.1049, 10.3152 )
+extents = Vector2( 10.435, 11.1577 )
 
 [sub_resource type="CircleShape2D" id=9]
 
@@ -57,6 +60,8 @@ radius = 10.8356
 [node name="Node" type="Node" index="0"]
 
 [node name="Background" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
 
 [node name="IceRink" type="Sprite" parent="Background" index="0"]
 
@@ -163,12 +168,12 @@ continuous_cd = 0
 contacts_reported = 0
 contact_monitor = false
 sleeping = false
-can_sleep = true
-linear_velocity = Vector2( 200, 200 )
+can_sleep = false
+linear_velocity = Vector2( 300, 300 )
 linear_damp = 0.0
-angular_velocity = 0.0
+angular_velocity = 1.0
 angular_damp = 0.0
-_sections_unfolded = [ "Angular", "Applied Forces", "Linear" ]
+_sections_unfolded = [ "Angular", "Applied Forces", "Collision", "Linear", "Pickable" ]
 
 [node name="PuckSprite" type="Sprite" parent="Node2D/Puck" index="0"]
 
@@ -258,7 +263,6 @@ shape = SubResource( 5 )
 
 [node name="Stick" type="KinematicBody2D" parent="Node2D" index="5"]
 
-editor/display_folded = true
 position = Vector2( 387, 454 )
 input_pickable = false
 collision_layer = 1
@@ -348,7 +352,6 @@ autostart = false
 
 [node name="Brick11" type="StaticBody2D" parent="Node2D" index="7"]
 
-editor/display_folded = true
 position = Vector2( 298.273, 217.412 )
 input_pickable = false
 collision_layer = 1
@@ -362,7 +365,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick11" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick11" index="1"]
@@ -401,7 +404,6 @@ autostart = false
 
 [node name="Brick22" type="StaticBody2D" parent="Node2D" index="8"]
 
-editor/display_folded = true
 position = Vector2( 298.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -415,7 +417,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick22" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick22" index="1"]
@@ -467,7 +469,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick38" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick38" index="1"]
@@ -559,7 +561,6 @@ autostart = false
 
 [node name="Brick12" type="StaticBody2D" parent="Node2D" index="11"]
 
-editor/display_folded = true
 position = Vector2( 228.273, 217.412 )
 input_pickable = false
 collision_layer = 1
@@ -573,7 +574,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick12" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick12" index="1"]
@@ -612,7 +613,6 @@ autostart = false
 
 [node name="Brick25" type="StaticBody2D" parent="Node2D" index="12"]
 
-editor/display_folded = true
 position = Vector2( 228.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -626,7 +626,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick25" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick25" index="1"]
@@ -665,7 +665,6 @@ autostart = false
 
 [node name="Brick39" type="StaticBody2D" parent="Node2D" index="13"]
 
-editor/display_folded = true
 position = Vector2( 228.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -679,7 +678,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick39" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick39" index="1"]
@@ -785,7 +784,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick13" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick13" index="1"]
@@ -824,7 +823,6 @@ autostart = false
 
 [node name="Brick21" type="StaticBody2D" parent="Node2D" index="16"]
 
-editor/display_folded = true
 position = Vector2( 159.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -838,7 +836,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick21" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick21" index="1"]
@@ -877,7 +875,6 @@ autostart = false
 
 [node name="Brick37" type="StaticBody2D" parent="Node2D" index="17"]
 
-editor/display_folded = true
 position = Vector2( 159.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -891,7 +888,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick37" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick37" index="1"]
@@ -983,7 +980,6 @@ autostart = false
 
 [node name="Brick14" type="StaticBody2D" parent="Node2D" index="19"]
 
-editor/display_folded = true
 position = Vector2( 90.273, 217.412 )
 input_pickable = false
 collision_layer = 1
@@ -997,7 +993,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick14" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick14" index="1"]
@@ -1036,7 +1032,6 @@ autostart = false
 
 [node name="Brick26" type="StaticBody2D" parent="Node2D" index="20"]
 
-editor/display_folded = true
 position = Vector2( 90.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -1050,7 +1045,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick26" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick26" index="1"]
@@ -1089,7 +1084,6 @@ autostart = false
 
 [node name="Brick34" type="StaticBody2D" parent="Node2D" index="21"]
 
-editor/display_folded = true
 position = Vector2( 90.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -1103,7 +1097,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick34" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34" index="1"]
@@ -1129,7 +1123,7 @@ _sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Z Ind
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick34/Area2D" index="0"]
 
-position = Vector2( 0.0350037, 0.91687 )
+position = Vector2( 0.0350037, -0.188446 )
 scale = Vector2( 3.23318, 2.64348 )
 shape = SubResource( 8 )
 
@@ -1209,7 +1203,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick16" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick16" index="1"]
@@ -1248,7 +1242,6 @@ autostart = false
 
 [node name="Brick24" type="StaticBody2D" parent="Node2D" index="24"]
 
-editor/display_folded = true
 position = Vector2( 367.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -1262,7 +1255,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick24" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick24" index="1"]
@@ -1314,7 +1307,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick33" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick33" index="1"]
@@ -1420,7 +1413,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick17" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick17" index="1"]
@@ -1459,7 +1452,6 @@ autostart = false
 
 [node name="Brick28" type="StaticBody2D" parent="Node2D" index="28"]
 
-editor/display_folded = true
 position = Vector2( 436.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -1473,7 +1465,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick28" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick28" index="1"]
@@ -1512,7 +1504,6 @@ autostart = false
 
 [node name="Brick35" type="StaticBody2D" parent="Node2D" index="29"]
 
-editor/display_folded = true
 position = Vector2( 436.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -1526,7 +1517,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick35" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick35" index="1"]
@@ -1632,7 +1623,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick15" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick15" index="1"]
@@ -1671,7 +1662,6 @@ autostart = false
 
 [node name="Brick27" type="StaticBody2D" parent="Node2D" index="32"]
 
-editor/display_folded = true
 position = Vector2( 504.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -1685,7 +1675,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick27" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick27" index="1"]
@@ -1724,7 +1714,6 @@ autostart = false
 
 [node name="Brick31" type="StaticBody2D" parent="Node2D" index="33"]
 
-editor/display_folded = true
 position = Vector2( 504.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -1738,7 +1727,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick31" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick31" index="1"]
@@ -1844,7 +1833,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick18" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick18" index="1"]
@@ -1897,7 +1886,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick29" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick29" index="1"]
@@ -1936,7 +1925,6 @@ autostart = false
 
 [node name="Brick36" type="StaticBody2D" parent="Node2D" index="37"]
 
-editor/display_folded = true
 position = Vector2( 572.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -1950,7 +1938,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick36" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick36" index="1"]
@@ -2056,7 +2044,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick19" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick19" index="1"]
@@ -2095,7 +2083,6 @@ autostart = false
 
 [node name="Brick23" type="StaticBody2D" parent="Node2D" index="40"]
 
-editor/display_folded = true
 position = Vector2( 640.273, 190.412 )
 input_pickable = false
 collision_layer = 1
@@ -2109,7 +2096,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick23" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick23" index="1"]
@@ -2148,7 +2135,6 @@ autostart = false
 
 [node name="Brick32" type="StaticBody2D" parent="Node2D" index="41"]
 
-editor/display_folded = true
 position = Vector2( 640.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -2162,7 +2148,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick32" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick32" index="1"]
@@ -2268,7 +2254,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick20" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick20" index="1"]
@@ -2321,7 +2307,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick30" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick30" index="1"]
@@ -2360,7 +2346,6 @@ autostart = false
 
 [node name="Brick40" type="StaticBody2D" parent="Node2D" index="45"]
 
-editor/display_folded = true
 position = Vector2( 708.273, 164.412 )
 input_pickable = false
 collision_layer = 1
@@ -2374,7 +2359,7 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="Sprite" type="Sprite" parent="Node2D/Brick40" index="0"]
 
-texture = ExtResource( 6 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Brick40" index="1"]
@@ -2413,6 +2398,7 @@ autostart = false
 
 [node name="Net" type="StaticBody2D" parent="Node2D" index="46"]
 
+editor/display_folded = true
 position = Vector2( 422.37, 74.6151 )
 input_pickable = false
 collision_layer = 1
@@ -2421,7 +2407,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script = ExtResource( 7 )
+script = ExtResource( 10 )
 
 [node name="Area2D" type="Area2D" parent="Node2D/Net" index="0"]
 
@@ -2443,7 +2429,7 @@ shape = SubResource( 9 )
 
 editor/display_folded = true
 visible = false
-script = ExtResource( 8 )
+script = ExtResource( 11 )
 
 [node name="ModalBackground" type="Panel" parent="Modal" index="0"]
 

@@ -1,8 +1,9 @@
 # paddle script
 extends KinematicBody2D
 
-var speed = 500;
-# left or right on the x axis
+# Speed of the Paddle
+var speed = 700;
+# Represenative of the paddle's direction on the x axis
 var direction = 0
 
 func _ready():
@@ -23,15 +24,15 @@ func _process(delta):
 		direction = 1
 	else:
 		direction = 0
+		
 	# apply and move the body
-	motion = Vector2(direction,0)*speed*delta
+	
+	motion = Vector2(direction,0) * speed * delta
 	move_and_collide(motion)
 	
-	#find the screen boundaries and keep the paddle from escaping the edge
+	# Find the screen boundaries and keep the paddle from escaping the edge
 	var bounds = get_viewport_rect().size
 	if global_position.x > bounds.x-50:
 		global_position = Vector2(bounds.x-50, global_position.y)
-		# set_global_pos(Vector2(bounds.x-50, global_position.y)) #TODO
 	elif global_position.x < 50:
 		global_position = Vector2(50, global_position.y)
-		# set_global_pos(Vector2(50, global_position.y)) #TODO
